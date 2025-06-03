@@ -1,13 +1,79 @@
+---
+import "./src/styles/global.css";
+import NavBar from "../components/NavBar.astro";
 
+const pageTitle = "Home Page";
+---
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Astro</title>
+    <title>{pageTitle}</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Web IBM VGA 8x16", monospace; 
+      }
+       .container {
+        margin: 10vh;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: top; 
+        align-items: center;   
+       }
+       .NavBar {
+        padding-left: 1vh;
+        display: flex;
+        justify-content: left;
+        background-color: rgb(83, 83, 83);
+        height: 30px;
+        font-size: .5rem;
+        align-items: center;
+        text-align: center;
+       }
+       .contentContainer {
+        display: inline-block;
+        width: 30vh;      
+
+       }
+       .centre-box {
+        width: 30vh;
+        height: 20vh;
+        background-color: rgb(73, 73, 73);
+        border: 2px solid #707070;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family:'Cousine', Courier, monospace;
+       }       
+       .mainText {
+  
+       }
+    </style>
   </head>
   <body>
-    <h1>Astro</h1>
+    
+    <div class="menu">
+      <NavBar />     
+    </div>
+    <div class="container">
+        <div class ="contentContainer">
+            <div class="mainText">
+                <p>Hello! I'm John (or aura), a twenty-something software developer based in the UK. Here's all my stuff!</p>
+            </div>
+
+            <div class="centre-box">
+              
+                <h1>aura.dev</h1>
+            </div>
+
+          </div>
+    </div>
   </body>
 </html>
