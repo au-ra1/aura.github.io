@@ -1,17 +1,17 @@
 ---
+import "./src/styles/global.css";
 import NavBar from "../components/NavBar.astro";
+
 ---
 
-<html lang="en">
+<html lang="en" data-theme = "dark">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Document</title>
+        <title>About</title>
     </head>
     <body>
-        <p>
-            <NavBar />
-        </p>
+            <NavBar/>
     </body>
 </html>

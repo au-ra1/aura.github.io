@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar.astro";
 const pageTitle = "Home Page";
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,8 +14,7 @@ const pageTitle = "Home Page";
     <title>{pageTitle}</title>
     <style>
       body {
-        margin: 0;
-        font-family: "Web IBM VGA 8x16", monospace; 
+        
       }
        .container {
         margin: 10vh;
@@ -25,21 +24,13 @@ const pageTitle = "Home Page";
         justify-content: top; 
         align-items: center;   
        }
-       .NavBar {
-        padding-left: 1vh;
-        display: flex;
-        justify-content: left;
-        background-color: rgb(83, 83, 83);
-        height: 30px;
-        font-size: .5rem;
-        align-items: center;
-        text-align: center;
-       }
+
        .contentContainer {
         display: inline-block;
         width: 30vh;      
 
        }
+       
        .centre-box {
         width: 30vh;
         height: 20vh;
@@ -58,10 +49,7 @@ const pageTitle = "Home Page";
     </style>
   </head>
   <body>
-    
-    <div class="menu">
       <NavBar />     
-    </div>
     <div class="container">
         <div class ="contentContainer">
             <div class="mainText">
@@ -70,7 +58,7 @@ const pageTitle = "Home Page";
 
             <div class="centre-box">
               
-                <h1>aura.dev</h1>
+                <h1></h1>
             </div>
 
           </div>

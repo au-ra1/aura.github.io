@@ -1,6 +1,32 @@
 ---
-
+import ChangeTheme from "../components/ChangeTheme.astro"
 ---
-<a href="/index/">home/</a>
-<a href="/about">about/</a>
-<a href="src/pages/blog/blog.astro">blog/</a>
+<style>
+    .navigation {
+        padding-left: 1vh;
+        padding-right: 2vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--colour-nav);
+        
+        height: 30px;
+        font-size: 1rem;
+        align-items: center;
+    }
+    a {
+        color: var(--colour);
+    }
+    
+    
+</style>
+<div class = "navigation">
+    <div class = "left-items">
+        <a href="/">home/</a>
+        <a href="/about">about/</a>
+        <a href="/blog">blog/</a>
+    </div>   
+
+    <div class = "right-items">
+        <ChangeTheme>
+    </div>
+</div>

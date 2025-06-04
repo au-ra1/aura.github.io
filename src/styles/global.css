@@ -1,7 +1,28 @@
-* {
-  background-color: #1b1b1b;
-  color: #d6d6d6;
+
+ [data-theme = "light"] {
+        --colour-bg: #fcfbf2;
+		--colour: rgb(107, 107, 107);
+		--colour-nav: #f1eee1;
+
+       }
+
+    [data-theme = "dark"] {
+        --colour-bg: #1f1f1f;
+		--colour: rgb(218, 218, 218);
+		--colour-nav: #3f3f3f;
+    }
+
+body {
+	margin: 0;
+	font-family: "Web IBM VGA 8x16", monospace; 
+	background-color: var(--colour-bg);
+	color: var(--colour)
+	
 }
+
+
+
+
 
 
 @font-face {
@@ -13,7 +34,3 @@
 	.custom-font     { font-family: 'Web IBM VGA 8x16';
  }
 
-
-.menu {
-  font-family:'Cousine', Courier, monospace
-}		
