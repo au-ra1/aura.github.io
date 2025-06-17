@@ -1,0 +1,56 @@
+---
+import "../styles/global.css"
+import NavBar from "../components/NavBar.astro"
+
+const { title } = Astro.props;
+---
+
+
+<!DOCTYPE html>
+<html lang="en" data-theme = "dark">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>{title}</title>
+    <style>
+      body {
+        
+      }
+       .container {
+        margin: 10vh;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: top; 
+        align-items: center;   
+       }
+
+       .contentContainer {
+        display: inline-block;
+        width: 30vh;      
+
+       }
+       
+      
+       .mainText {
+  
+       }
+    </style>
+  </head>
+  <body>
+      <NavBar />     
+    <div class="container">
+        <div class ="contentContainer">
+            <div class="mainText">
+            <slot />
+
+            </div>
+
+           
+
+          </div>
+    </div>
+  </body>
+</html>

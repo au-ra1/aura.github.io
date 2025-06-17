@@ -1,8 +1,8 @@
 
  [data-theme = "light"] {
-        --colour-bg: #fcfbf2;
-		--colour: rgb(107, 107, 107);
-		--colour-nav: #f1eee1;
+        --colour-bg: #fcfbf2; /*background colour var*/
+		--colour: rgb(107, 107, 107);  /*text colour var*/
+		--colour-nav: #f1eee1;  /*Navbar background colour var*/
 
        }
 

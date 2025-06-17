@@ -1,17 +1,8 @@
 ---
 import "../styles/global.css";
-import NavBar from "../components/NavBar.astro";
-
+import PageTemplate from "../components/PageTemplate.astro"
 ---
 
-<html lang="en" data-theme = "dark">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>About</title>
-    </head>
-    <body>
-            <NavBar/>
-    </body>
-</html>
+<PageTemplate title = "about">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat at eros sed euismod. Vivamus sapien nibh, cursus ut tristique id, pretium non lorem. Nunc vel elit fringilla, cursus eros vel, laoreet turpis. Etiam finibus dui a lacus porta malesuada. Praesent eget nisl mattis, ullamcorper ligula nec, commodo tellus. Cras eu libero eu lectus pulvinar egestas et sit amet velit. Duis sollicitudin nibh sed felis sodales tempor. Mauris aliquam ornare urna quis aliquam. Aliquam sollicitudin augue vel tincidunt tincidunt. Sed dapibus elit quis turpis porttitor, id tristique urna laoreet.</p>
+</PageTemplate>
