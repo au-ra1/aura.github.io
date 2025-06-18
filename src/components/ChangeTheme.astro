@@ -4,9 +4,6 @@
 <script>
 
 const button = document.querySelector("[theme-toggle]");
-
-
-
 const localTheme = getLocalStorageTheme("theme", "dark");
 updateHTML(localTheme)
 
@@ -16,6 +13,8 @@ updateHTML(localTheme)
 button.addEventListener("click", () => {
     const current = getTheme();
     const newTheme = current === "dark" ? "light" : "dark";
+    const buttonText = newTheme === "dark" ? "☼" : "☾";
+    button.innerHTML = buttonText;
     updateLocalStorage(newTheme);
     updateHTML(newTheme);
 
@@ -52,9 +51,14 @@ function getLocalStorageTheme(theme: string, defaultV: "dark"): "dark" {
 </script>
 <style> 
     button {
+        
         width: 25px;
-        justify-content: left;
+        justify-content: center;
+        border-width: 1px;
+        border-color: var(--colour-changeTheme);
+        border-style: hidden;
         background-color: var(--colour-bg);
+        color: var(--color);
     }
    
 </style>
@@ -62,5 +66,4 @@ function getLocalStorageTheme(theme: string, defaultV: "dark"): "dark" {
 <button 
     type="button"
     theme-toggle
-    aria-label = "☼"
     >☼</button>

@@ -1,15 +1,17 @@
 
  [data-theme = "light"] {
-        --colour-bg: #fcfbf2; /*background colour var*/
+    --colour-bg: #fcfbf2; /*background colour var*/
 		--colour: rgb(107, 107, 107);  /*text colour var*/
 		--colour-nav: #f1eee1;  /*Navbar background colour var*/
+    --colour-changeTheme:  #e0c0d2; /* themechange button border colour */
 
        }
 
     [data-theme = "dark"] {
-        --colour-bg: #1f1f1f;
+    --colour-bg: #1f1f1f;
 		--colour: rgb(218, 218, 218);
 		--colour-nav: #3f3f3f;
+    --colour-changeTheme:  #333333;
     }
 
 body {
