@@ -19,6 +19,32 @@ body {
 	color: var(--colour)
 	
 }
+a {
+        color: var(--colour);
+    }
+/* a:link {
+  color:  rgb(107, 107, 107);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(107, 107, 107);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:  rgb(170, 170, 170);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(107, 107, 107);
+  background-color: transparent;
+  text-decoration: underline;
+} */
 
 
 

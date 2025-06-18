@@ -1,12 +1,24 @@
 ---
-import "../styles/global.css";
 import PageTemplate from "../components/PageTemplate.astro"
-
+import { getCollection } from "astro:content";
+const posts = await getCollection("blog");
 ---
 
 <PageTemplate title = "blog">
-<h1>Blog</h1>
-<li>
-    <a href = "/blog/1">Blogpost numero 1</a>
-</li>
+
+
+    <h1>blog</h1>
+    <ul>
+      {posts.map((post) => (
+        <li>
+          
+          <a href={`src/content/blog/${post.id}`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+
+
+
+
+  
 </PageTemplate>
