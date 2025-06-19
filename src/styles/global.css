@@ -57,7 +57,7 @@ a:active {
 			font-family: 'Web IBM VGA 8x16';
 			font-style: normal;
 			font-weight: 400;
-			src: url(.//fonts/WebPlus_IBM_VGA_8x16.woff) format('woff');
+			src: url(/fonts/WebPlus_IBM_VGA_8x16.woff) format('woff');
 		}
 	.custom-font     { font-family: 'Web IBM VGA 8x16';
  }
