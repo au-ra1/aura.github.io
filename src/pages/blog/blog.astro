@@ -1,23 +1,54 @@
 ---
 function sort(arg0: (a: any, b: any) => number) {
-throw new Error("Function not implemented.");
+throw new Error("Function not exist");
 }
+
 
 import PageTemplate from "../../components/PageTemplate.astro"
 import { getCollection } from "astro:content";
 const posts = await getCollection("blog");
   posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
+function formatDate(dateString) {
+  let date = new Date(dateString)
+  const year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  let day = date.getDay();
+
+  if (month < 10) {
+    month = "0" + month;
+  }
+  if (day < 10) {
+    day = "0" + day;
+  }
+
+  return ` ----- ${year}-${month}-${day}`;
+}
 ---
+<style>
+   a:link {
+  color:  rgb(107, 107, 107);
+  background-color: transparent;
+  text-decoration: none;
 
+   }
+   a:hover {
+  color:  rgb(170, 170, 170);
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
 <PageTemplate title = "blog">
-  <h1>blog</h1>
+  <h1>Blog</h1>
+  <div style="align-items: left; justify-content: left;">
    {posts.map(post => (    
-      <ul>
-         <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+   
+      <ul style=>
+         <a href={`/blog/${post.slug}`}>{post.data.title} {formatDate(post.data.date)}</a>
       </ul>
+      
     ))}
-
+  </div>
 
 </PageTemplate>
 

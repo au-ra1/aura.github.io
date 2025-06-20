@@ -3,7 +3,7 @@
     --colour-bg: #fcfbf2; /*background colour var*/
 		--colour: rgb(107, 107, 107);  /*text colour var*/
 		--colour-nav: #f1eee1;  /*Navbar background colour var*/
-    --colour-changeTheme:  #e0c0d2; /* themechange button border colour */
+    --colour-border: #c6c7bd; /* border colour for centre box */
 
        }
 
@@ -11,7 +11,7 @@
     --colour-bg: #1f1f1f;
 		--colour: rgb(218, 218, 218);
 		--colour-nav: #3f3f3f;
-    --colour-changeTheme:  #333333;
+    --colour-border: #5a5a5a;
     }
 
 body {
@@ -49,15 +49,16 @@ a:active {
 } */
 
 
-
-
-
+.pixelated {
+  image-rendering: pixelated;
+}
 
 @font-face {
 			font-family: 'Web IBM VGA 8x16';
 			font-style: normal;
 			font-weight: 400;
 			src: url(/fonts/WebPlus_IBM_VGA_8x16.woff) format('woff');
+      font-size: 1.4;
 		}
 	.custom-font     { font-family: 'Web IBM VGA 8x16';
  }
